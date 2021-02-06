@@ -261,7 +261,8 @@ var paintBucketApp = (function () {
 				// Mouse down location
 				var mouseX = e.pageX - this.offsetLeft,
 					mouseY = e.pageY - this.offsetTop;
-
+				console.log('Mouse down at:', mouseX, mouseY);
+				
 				if (mouseX < drawingAreaX) { // Left of the drawing area
 					if (mouseX > swatchStartX) {
 						if (mouseY > swatchStartY && mouseY < swatchStartY + swatchImageHeight) {
